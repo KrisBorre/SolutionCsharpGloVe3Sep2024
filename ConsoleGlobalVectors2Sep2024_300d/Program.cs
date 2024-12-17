@@ -1,12 +1,12 @@
 ﻿using System.Globalization;
 
-namespace ConsoleGlobalVectors2Sep2024_200d
+namespace ConsoleGlobalVectors2Sep2024_300d
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string gloveFilePath = "../../../../../../../GloVe/glove.6B.200d.txt";
+            string gloveFilePath = "../../../../../../../GloVe/glove.6B.300d.txt";
 
             var targetWords = new List<string> { "ice", "steam" };
             var contextWords = new List<string> { "solid", "gas", "water", "fashion" };
@@ -40,10 +40,10 @@ namespace ConsoleGlobalVectors2Sep2024_200d
 
             /*
             Context Word P(k|ice)   P(k|steam) Ratio
-            solid      3,20E-001  2,28E-001  1,40
-            gas        2,74E-001  4,01E-001  0,68
-            water      4,76E-001  4,76E-001  1,00
-            fashion    1,55E-001  7,50E-002  2,06
+            solid      2,34E-001  1,59E-001  1,47
+            gas        2,01E-001  3,15E-001  0,64
+            water      4,02E-001  3,85E-001  1,05
+            fashion    1,39E-001  -4,21E-003 -33,11            
             */
 
             Console.ReadLine();

@@ -7,7 +7,7 @@
     {
         static void Main(string[] args)
         {
-            string gloveFilePath = "../../../../../../../GloVe/glove.6B.50d.txt";
+            string gloveFilePath = "../../../../../../../GloVe/glove.6B.300d.txt";
 
             // Sample words in different languages to check for embeddings
             var wordsToCheck = new Dictionary<string, List<string>>
