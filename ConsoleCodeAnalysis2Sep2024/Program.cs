@@ -100,6 +100,7 @@ Run the program to ensure everything works together and output is as expected.")
             }
 
             // DeepSeek
+            #region DeepSeek output 1
             /*
             Server Health: {"status":"ok"}
             User: Let's start with the IEnumerable interface, which is used to make a class iterable in a foreach loop.
@@ -740,7 +741,9 @@ Run the program to ensure everything works together and output is as expected.")
             Estimated Token Count: 3547
             Your context is within the model's token limit.
             */
+            #endregion
 
+            #region DeepSeek output 2
             // DeepSeek
             /*
             Server Health: {"status":"ok"}
@@ -1338,7 +1341,9 @@ Run the program to ensure everything works together and output is as expected.")
             Estimated Token Count: 3279
             Your context is within the model's token limit.
             */
+            #endregion
 
+            #region DeepSeek output 3
             // DeepSeek
             /*
             Server Health: {"status":"ok"}
@@ -2115,7 +2120,9 @@ Run the program to ensure everything works together and output is as expected.")
             Estimated Token Count: 3775
             Your context is within the model's token limit.
             */
+            #endregion
 
+            #region DeepSeek output 4
             // DeepSeek
             /*
             Server Health: {"status":"ok"}
@@ -2907,7 +2914,7 @@ This program demonstrates the following:
 Estimated Token Count: 4274
 Warning: Your context exceeds the model's limit of 4096 tokens.
 */
-
+            #endregion
 
             Console.ReadLine();
         }
