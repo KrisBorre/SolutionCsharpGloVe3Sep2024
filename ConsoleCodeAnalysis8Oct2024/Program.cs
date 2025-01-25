@@ -1611,6 +1611,7 @@ Demonstration: Train the RNN on a small dataset (e.g., a simple sequence predict
                 Console.WriteLine("Server is not ready for requests.");
             }
 
+            #region 8 Oct 2024 DeepSeek 1
             /*
             Project: RNN
             User: We get the following compilation messages:
@@ -2181,8 +2182,10 @@ Demonstration: Train the RNN on a small dataset (e.g., a simple sequence predict
             The code has properly closed `csharp` blocks.
             Assistant response is sufficiently long.
             */
+            #endregion
 
 
+            #region 8 Oct 2024 DeepSeek 2
             /*
             Project: RNN
             User: We get the following compilation messages:
@@ -2680,8 +2683,10 @@ Demonstration: Train the RNN on a small dataset (e.g., a simple sequence predict
             The code has properly closed `csharp` blocks.
             Assistant response is sufficiently long.
             */
+            #endregion
 
 
+            #region 8 Oct 2024 DeepSeek 3
             /*
             Project: RNN
             User: We get the following compilation messages:
@@ -3223,8 +3228,10 @@ Demonstration: Train the RNN on a small dataset (e.g., a simple sequence predict
             The code has properly closed `csharp` blocks.
             Assistant response is sufficiently long.
             */
+            #endregion
 
 
+            #region 8 Oct 2024 DeepSeek 4
             /*
             Project: RNN
             User: We get the following compilation messages:
@@ -3798,8 +3805,10 @@ Demonstration: Train the RNN on a small dataset (e.g., a simple sequence predict
                         for (int i = 0; i < hiddenSize; i++)
                         { 
             */
+            #endregion
 
 
+            #region 8 Oct 2024 DeepSeek 5
             /*  
             Project: RNN
             User: We get the following compilation messages:
@@ -4277,7 +4286,7 @@ Demonstration: Train the RNN on a small dataset (e.g., a simple sequence predict
             The code has properly closed `csharp` blocks.
             Assistant response is sufficiently long. 
             */
-
+            #endregion
 
             Console.ReadLine();
         }

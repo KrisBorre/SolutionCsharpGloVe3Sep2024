@@ -809,6 +809,11 @@ namespace ConsoleCodeAnalysis3Oct2024
             To use this RNN, you can create an instance of `SimpleRNN` with the appropriate input, hidden, and output sizes, and call the `Forward` method with input data. Remember to handle the training and evaluation steps as discussed by the experts.
             */
 
+
+            /*
+             
+             */
+
             Console.ReadLine();
         }
 
