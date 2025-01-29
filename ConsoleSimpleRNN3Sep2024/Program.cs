@@ -1,6 +1,6 @@
-﻿using LibrarySimpleRNN1Oct2024;
+﻿using LibrarySimpleRNN1Sep2024;
 
-namespace ConsoleSimpleRNN3Oct2024
+namespace ConsoleSimpleRNN3Sep2024
 {
     internal class Program
     {
@@ -9,7 +9,7 @@ namespace ConsoleSimpleRNN3Oct2024
             int inputSize = 3;
             int hiddenSize = 5;
             int outputSize = 1;
-            double learningRate = 0.01;
+            double learningRate = 0.3;
             int epochs = 1000;
 
             SimpleRNN rnn = new SimpleRNN(inputSize, hiddenSize, outputSize, learningRate);
@@ -61,23 +61,10 @@ namespace ConsoleSimpleRNN3Oct2024
                 Console.WriteLine($"Epoch {epoch + 1}/{epochs}, Loss: {totalLoss}");
             }
 
-            // Assert that learning occurred by checking the overall loss reduction from initial to final epoch
-            if (overallLoss >= initialLoss) Console.WriteLine("Overall loss did not decrease, indicating lack of learning.");
-
-            /*
-            ....
-            Epoch 997/1000, Loss: 2,249137217985157E-17
-            Epoch 998/1000, Loss: 2,1835033207507885E-17
-            Epoch 999/1000, Loss: 2,1197847980604842E-17
-            Epoch 1000/1000, Loss: 2,057925602192353E-17 
-            */
-
-            /*
-            ...
-            Epoch 998/1000, Loss: 3,5309284169140917E-17
-            Epoch 999/1000, Loss: 3,427960060956636E-17
-            Epoch 1000/1000, Loss: 3,327994506065769E-17 
-            */
+            if (overallLoss >= initialLoss)
+            {
+                Console.WriteLine("Overall loss did not decrease, indicating lack of learning.");
+            }
 
             for (int i = 0; i < inputs.Length; i++)
             {
@@ -91,9 +78,56 @@ namespace ConsoleSimpleRNN3Oct2024
             }
 
             /*
-            finalOutput[0]= -6,504374556320913E-11
-            finalOutput[1]= 1,0000000109952334
-            finalOutput[2]= 0,9999999894512492
+            ...
+            Epoch 997/1000, Loss: 0
+            Epoch 998/1000, Loss: 0
+            Epoch 999/1000, Loss: 0
+            Epoch 1000/1000, Loss: 0
+            finalOutput[0]= 0
+            finalOutput[1]= 1
+            finalOutput[2]= 1
+            */
+
+            double[] generalInput1 = new double[] { 0, 1, 1 };
+            double[] generalOutput1 = rnn.Forward(generalInput1);
+            Console.Write($"generalInput1= ");
+            for (int j = 0; j < generalInput1.Length; j++)
+            {
+                Console.Write($"{generalInput1[j]} ");
+            }
+            Console.WriteLine();
+
+            Console.Write($"generalOutput1= ");
+            for (int j = 0; j < generalOutput1.Length; j++)
+            {
+                Console.Write($"{generalOutput1[j]} ");
+            }
+            Console.WriteLine();
+
+            /*
+            generalInput1= 0 1 1
+            generalOutput1= 1,0857489055647136 
+            */
+
+            double[] generalInput2 = new double[] { 1, 1, 0 };
+            double[] generalOutput2 = rnn.Forward(generalInput2);
+            Console.Write($"generalInput2= ");
+            for (int j = 0; j < generalInput2.Length; j++)
+            {
+                Console.Write($"{generalInput2[j]} ");
+            }
+            Console.WriteLine();
+
+            Console.Write($"generalOutput2= ");
+            for (int j = 0; j < generalOutput2.Length; j++)
+            {
+                Console.Write($"{generalOutput2[j]} ");
+            }
+            Console.WriteLine();
+
+            /*
+            generalInput2= 1 1 0
+            generalOutput2= 0,17688591474851406 
             */
 
             Console.ReadLine();

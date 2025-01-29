@@ -72,6 +72,49 @@
             Input: 0,0, Output: 0,0008054607043177825 
             */
 
+            double[] generalInput1 = new double[] { 0, 0.5 };
+            double[] generalOutput1 = rnn.Forward(generalInput1);
+            Console.Write($"generalInput1= ");
+            for (int j = 0; j < generalInput1.Length; j++)
+            {
+                Console.Write($"{generalInput1[j]} ");
+            }
+            Console.WriteLine();
+
+            Console.Write($"generalOutput1= ");
+            for (int j = 0; j < generalOutput1.Length; j++)
+            {
+                Console.Write($"{generalOutput1[j]} ");
+            }
+            Console.WriteLine();
+
+            /*
+            generalInput1= 0 0,5
+            generalOutput1= 0,4417570994328679
+            */
+
+
+            double[] generalInput2 = new double[] { -1, -0.5 };
+            double[] generalOutput2 = rnn.Forward(generalInput2);
+            Console.Write($"generalInput2= ");
+            for (int j = 0; j < generalInput2.Length; j++)
+            {
+                Console.Write($"{generalInput2[j]} ");
+            }
+            Console.WriteLine();
+
+            Console.Write($"generalOutput2= ");
+            for (int j = 0; j < generalOutput2.Length; j++)
+            {
+                Console.Write($"{generalOutput2[j]} ");
+            }
+            Console.WriteLine();
+
+            /*
+            generalInput2= -1 -0,5
+            generalOutput2= -0,6344442501117763 
+            */
+
             Console.ReadLine();
         }
     }
