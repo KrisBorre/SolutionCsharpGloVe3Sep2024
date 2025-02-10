@@ -437,11 +437,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleImprovedRNN1Nov2024"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleRNN10Sep2024", "ConsoleRNN10Sep2024\ConsoleRNN10Sep2024.csproj", "{1A23D0AC-9DBE-4F87-ACE1-43C5F47928D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleImprovedRNN1Nov2024_300d", "ConsoleImprovedRNN1Nov2024_300d\ConsoleImprovedRNN1Nov2024_300d.csproj", "{5253850C-A796-4558-9C10-90FD9224121E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleImprovedRNN1Nov2024_300d", "ConsoleImprovedRNN1Nov2024_300d\ConsoleImprovedRNN1Nov2024_300d.csproj", "{5253850C-A796-4558-9C10-90FD9224121E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleImprovedRNN2Nov2024", "ConsoleImprovedRNN2Nov2024\ConsoleImprovedRNN2Nov2024.csproj", "{FE8F3E0C-C4EA-408C-94F3-414C76CAFB27}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleImprovedRNN2Nov2024", "ConsoleImprovedRNN2Nov2024\ConsoleImprovedRNN2Nov2024.csproj", "{FE8F3E0C-C4EA-408C-94F3-414C76CAFB27}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleImprovedRNN2Nov2024_300d", "ConsoleImprovedRNN2Nov2024_300d\ConsoleImprovedRNN2Nov2024_300d.csproj", "{DBAEAB3F-EAC6-4C46-AD12-300433A7A275}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleImprovedRNN2Nov2024_300d", "ConsoleImprovedRNN2Nov2024_300d\ConsoleImprovedRNN2Nov2024_300d.csproj", "{DBAEAB3F-EAC6-4C46-AD12-300433A7A275}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryPrompts4Nov2024", "LibraryPrompts4Nov2024\LibraryPrompts4Nov2024.csproj", "{933D34F6-6EB1-4FA0-A5F7-B15B70881CEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleImprovedRNNPrompts4Nov2024", "ConsoleImprovedRNNPrompts4Nov2024\ConsoleImprovedRNNPrompts4Nov2024.csproj", "{D2F09576-D6ED-4A31-AD95-A191CA766417}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryGradientRNN6Nov2024", "LibraryGradientRNN6Nov2024\LibraryGradientRNN6Nov2024.csproj", "{44ADC14D-DBD8-4A9C-A27F-1B58427706EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleGradientRNNPrompts6Nov2024", "ConsoleGradientRNNPrompts6Nov2024\ConsoleGradientRNNPrompts6Nov2024.csproj", "{15B9BCC1-B69A-4B28-ACB5-6D0D1B3D37B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1329,6 +1337,22 @@ Global
 		{DBAEAB3F-EAC6-4C46-AD12-300433A7A275}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBAEAB3F-EAC6-4C46-AD12-300433A7A275}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBAEAB3F-EAC6-4C46-AD12-300433A7A275}.Release|Any CPU.Build.0 = Release|Any CPU
+		{933D34F6-6EB1-4FA0-A5F7-B15B70881CEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{933D34F6-6EB1-4FA0-A5F7-B15B70881CEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{933D34F6-6EB1-4FA0-A5F7-B15B70881CEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{933D34F6-6EB1-4FA0-A5F7-B15B70881CEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2F09576-D6ED-4A31-AD95-A191CA766417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2F09576-D6ED-4A31-AD95-A191CA766417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2F09576-D6ED-4A31-AD95-A191CA766417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2F09576-D6ED-4A31-AD95-A191CA766417}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44ADC14D-DBD8-4A9C-A27F-1B58427706EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44ADC14D-DBD8-4A9C-A27F-1B58427706EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44ADC14D-DBD8-4A9C-A27F-1B58427706EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44ADC14D-DBD8-4A9C-A27F-1B58427706EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B9BCC1-B69A-4B28-ACB5-6D0D1B3D37B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B9BCC1-B69A-4B28-ACB5-6D0D1B3D37B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B9BCC1-B69A-4B28-ACB5-6D0D1B3D37B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B9BCC1-B69A-4B28-ACB5-6D0D1B3D37B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
